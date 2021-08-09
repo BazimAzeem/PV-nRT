@@ -28,17 +28,17 @@ function setup() {
 
   //Slider Volume
   sliderV = createSlider(50, 300, 175);
-  sliderV.position(10, height - sliderSpace + 10);
+  sliderV.position(10 + x, height - sliderSpace + 10 + y);
   sliderV.style('width', '300px');
 
   //Slider Particles
   sliderP = createSlider(20, maxParticles, 60);
-  sliderP.position(10, height - sliderSpace / 2 - 10);
+  sliderP.position(10 + x, height - sliderSpace / 2 - 10 + y);
   sliderP.style('width', '300px');
 
   //Slider Temperature
   sliderT = createSlider(20, 300, 160);
-  sliderT.position(10, height - sliderSpace / 3 + 3);
+  sliderT.position(10 + x, height - sliderSpace / 3 + 3 + y);
   sliderT.style('width', '300px');
 
   //Create Particles
