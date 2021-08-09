@@ -21,8 +21,10 @@ var temp;
 var oldTemp;
 
 function setup() {
-  createCanvas(400, 400 + sliderSpace);
-  rectMode(CENTER);
+  var cnv = createCanvas(400, 400 + sliderSpace);
+  var x = (windowWidth - width) / 2;
+  var y = (windowHeight - height) / 2;
+  cnv.position(x, y);  rectMode(CENTER);
 
   //Slider Volume
   sliderV = createSlider(50, 300, 175);
